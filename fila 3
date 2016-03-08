@@ -1,0 +1,20 @@
+// area paralelogramo.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+void main ()
+
+{
+float base, altura, area ;
+cout<<"ingrese altura";
+cin>> altura;
+cout<<"ingrese la base";
+cin>> base;
+area= base* altura;
+cout<< "el area es: "<<area;
+getch();
+}
+
