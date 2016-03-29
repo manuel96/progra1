@@ -1,0 +1,33 @@
+//ejercicio_2//
+
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+int main() {
+	float a;
+	float b;
+	float c;
+	float c};
+	float d;
+	float rc{b;
+	float x1;
+	float x2;
+	cout << "resolver la ecuacion ax2+ bx + c =0 obteniendo el valor de x1 y x2" << endl;
+	cout << "de el valor de a" << endl;
+	cin >> a;
+	cout << "de el valor de b" << endl;
+	cin >> b;
+	cout << "de el valor de c" << endl;
+	cin >> c;
+	if (a<0 && c<0) {
+		cout << "los valores de x1 y x2 son imaginario por que se hace una raiz negativa" << endl;
+	} else {
+		x1 = (-b+sqrtf(b*b-4*a*c))/a;
+		x2 = (-b-sqrtf(b*b-4*a*c))/a;
+		cout << "el valor de x1 es : " << x1 << endl;
+		cout << "el valor de x2 es : " << x2 << endl;
+	}
+	return 0;
+}
+
