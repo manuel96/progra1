@@ -1,0 +1,68 @@
+// Zona de Control.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "stdlib.h"
+using namespace std;
+
+void main ()
+{
+	float parcial1, parcial2, Practico, Final, NotaFinal, Faltas, NotaParcial, NotaPractica, ExamenFinal;
+	int registro,i=0;
+	cout<< "Ingrese numero de registro: ";
+	cin>> registro;
+	cout<<endl;
+	while (registro!=-999)
+	{
+		cout<< "Ingrese Nota Parcial 1: ";
+		cin>> parcial1;
+		cout<<endl;
+		cout<< "Ingrese Nota Parcial 2: ";
+		cin>> parcial2;
+		if ((parcial1<=100) && (parcial2<=100))
+		{
+			NotaParcial = ((parcial1 + parcial2)/2)*0.4;
+			cout<< "La nota parcial es: " << NotaParcial <<endl;
+		}
+		cout<<endl;
+		cout<< "Ingrese Examen Practico: ";
+		cin>> Practico;
+		if (Practico<=100)
+		{
+			NotaPractica = ((Practico)*0.2);
+			cout<< "La nota practica es: " << NotaPractica <<endl;
+		}
+		cout<<endl;
+		cout<< "Ingrese Examen Final: ";
+		cin>> Final;
+		if (Final<=100)
+		{
+			ExamenFinal = ((Final)*0.4);
+			cout<< "La nota del examen final es: " << ExamenFinal <<endl;
+		}
+		cout<<endl;
+		cout<< "Ingrese el numero de faltas: ";
+		cin>> Faltas;
+		cout<<endl;
+		if (Faltas>(48*0.2))
+		{
+			NotaFinal==0;
+			cout<< "Nota anulada por exceso de faltas"<<endl;
+			cout<<endl;
+			cout<< "La nota final es: " << NotaFinal <<endl;
+		}
+		else
+		{
+			NotaFinal=(NotaParcial + NotaPractica + ExamenFinal);
+		
+			cout<< "La nota final es: " << NotaFinal <<endl;
+
+		}
+			system("cin");
+		cout<< "Ingrese numero de registro: ";
+		cin>> registro;
+	}
+	getch();
+}
