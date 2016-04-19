@@ -1,0 +1,32 @@
+// ejercicio 16.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+using namespace std;
+void main()
+{
+	int x,y,r,i=0,digito;
+	float s=0;
+	
+	cout<<"ingrese el numero a convertir";
+	cin>>x;
+	
+	cout<<"la base que desea llevar";
+	cin>>r;
+
+	while(x>0)
+	{
+		digito=x%r;
+		x=x/r;
+		s=s +digito*pow(10.0,i);
+		i++;
+	}
+	
+	cout<<s;
+	getch();
+}
+
+
