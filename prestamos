@@ -1,0 +1,37 @@
+// juju.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include <string>
+using namespace std;
+void main ()
+{
+    int cod,aux,numPrestamo;
+    float montoe,monto,totalprestado;
+    string nombre;
+    totalprestado=0;
+    cout<<"Ingrese el codigo del empleado: "<<endl;
+    cin>>cod;
+    while (cod!=-999) {
+        aux=cod;
+        montoe=0;
+    while (aux==cod){
+        cout<<"Ingrese nombre: "<<endl;
+        cin>>nombre;
+        cout<<"Ingrese numero de prestamo: "<<endl;
+        cin>>numPrestamo;
+        cout<<"Ingrese nombre monto: "<<endl;
+        cin>>monto;
+        montoe= montoe + monto;
+        cout<<"Ingrese el codigo del empleado: "<<endl;
+        cin>>cod;
+    }
+    cout<<"Monto prestado del empleado: "<<montoe<<endl;
+    totalprestado= totalprestado + montoe;}
+    cout<<"El total prestado sera: "<<totalprestado<<endl;
+getch();
+}
+
+
